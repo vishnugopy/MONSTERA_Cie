@@ -197,3 +197,33 @@ margin: 1% 0%;
 }
 
 
+footer{
+  background-color: whitesmoke;
+  color: #000000;
+  padding: 2%;
+  text-align: center;
+}
+
+footer nav{
+  background-color: whitesmoke;
+}
+.socials{
+  margin: 2% auto;
+  font-size: 2em;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid var(--brown);
+  padding: 2%;
+}
+.socials a{
+  text-decoration: none;
+  color: var(--black);
+}
+
+.socials a:hover{
+  text-decoration: none;
+  color: var(--green);
+}
+
+
