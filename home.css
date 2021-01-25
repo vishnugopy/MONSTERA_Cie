@@ -36,7 +36,7 @@ header {
     text-align: center;
     height: 50vh;
     background: linear-gradient(rgba(255, 255, 255, 0.246) , rgb(255, 255, 255)),
-    url(https://images.unsplash.com/photo-1568217716588-97944ab3e893?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80) bottom center no-repeat;
+    url(./imgs/home.jpg) bottom center no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -45,12 +45,6 @@ header {
 
   .biglogo{
     width: 20%;
-  }
-  
-  h1 {
-    color: rgb(0, 0, 0);
-    font-size: 7vw;
-    text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
   }
   
   nav {
@@ -102,24 +96,104 @@ header {
   width: 30px;
  }
 
-.icons{
-   width: 20px;
- }
-
  .button{
    display: flex;
    justify-content: center;
    align-items: center;
    width:50%;
+   height: 60%;
    background-color: var(--green);
    color: blanchedalmond;
+   border-radius: 10px;
  }
 
- .button img{
-   margin: 0 10%;
-   color: ;
+ .button a{
+   color: var(--white);
  }
 
  .button:hover{
-   color: var;
+   background-color: var(--whitish);
  }
+
+ 
+ .button i{
+  margin: 0 5%;
+ }
+
+ main{
+   margin: 0 auto;
+   width: 70%;
+   padding: 5% 1%;
+ }
+
+ .firstsectionofpage{
+   display: flex;
+   justify-content: center;
+   border: 0.5px solid var(--whitish);
+   border-radius: 15px;
+   text-align: left;
+
+ }
+
+ .firstsectionofpage img{
+   width: 100%;
+   border-radius: 15px 0px  0px 15px ;
+ }
+
+ .firstsectionofpage div:nth-child(1){
+  width: 42%;
+  margin: 0;
+}
+
+
+.firstsectionofpage div:nth-child(2){
+  width: 58%;
+  padding: 2% ;
+}
+
+
+h2{
+  margin: 5% 0% 2% 0%;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+
+.teampart{
+  display: flex;
+   flex-direction: column;
+}
+
+
+.profileslider{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.profileslider div {
+width: 30%;
+display: flex;
+align-items: center;
+flex-direction: column;
+border-radius: 15px;
+padding: 2%;
+margin: 1%;
+}
+
+.profileslider img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.boderonly{
+  border: 0.5px solid var(--whitish);
+}
+
+
+h4{
+margin: 1% 0%;
+}
+
+
