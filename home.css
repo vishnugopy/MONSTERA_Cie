@@ -106,7 +106,9 @@ html {
    height: 60%;
    background-color: var(--green);
    color: blanchedalmond;
-   border-radius: 10px;
+   border-radius: 5px;
+   text-decoration: none;
+   margin: 2% 0;
  }
 
  .button a{
@@ -114,7 +116,9 @@ html {
  }
 
  .button:hover{
-   background-color: var(--whitish);
+   background-color: var(--brown);
+   color: var(--white);
+   font-weight: 800;
  }
 
  
@@ -162,6 +166,13 @@ h2{
   font-weight: 400;
   text-transform: capitalize;
   border-bottom: 2px solid var(--green);
+  width: max-content;
+}
+
+h3{
+  margin:0 ;
+  font-weight: 500;
+  font-style: italic;
 }
 
 

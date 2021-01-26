@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: 'Mulish', Arial, sans-serif;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+.container > h2 {
+  border-bottom: 2px solid #226624;
+  width: max-content;
+  padding-bottom: 15px;
+}
+.contact {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    min-height: 100vh;
+}
+.form , address {
+    width: 45%;
+}
+.form label {
+    /* font-size: 1em; */
+    margin-bottom: 5px;
+}
+.form label > span {
+    color: #f00;
+}
+.form p {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+.form input,
+.form textarea {
+  padding: 1em 1em;
+  /* font-size: 1em; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 #ccc;
+}
+.form > form > input {
+    background-color: #226624;
+    color: #fff;
+    cursor: pointer;
+}
+.form > form  input:focus, textarea:focus {
+    border-color: #226624;
+    border-width: 2px;
+    outline: none;
+}
+.contact address {
+    line-height: 2em;
+    display: flex;
+    flex-direction: column;
+}
+.container address > img {
+    width: 80%;
+    align-self: center;
+    margin-bottom: 2em;
+}
+.contact address > div > a {
+    color: #226624;
+}
+.separateur {
+    
+}
