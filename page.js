@@ -34,3 +34,24 @@ window.addEventListener("scroll", helloBuddy);
  }
  
  setInterval(changeImage, 2500);
+
+
+ let foot = document.querySelector("footer");
+ foot.innerHTML = `<div>
+ <nav>
+ <a href="index.html">Accueil</a></li>
+ <a href="Product_page/product.html">Produits</a></li>
+ <a href="service_page/services.html">Services</a></li>
+ <a href="contact_page/contact.html">Contact</a></li>
+ </nav>
+ </div>
+ <div class="socials">
+   <a href="#"><i class="fab fa-facebook-square"></i></a>
+   <a href="#"><i class="fab fa-instagram"></i></a>
+   <a href="#"><i class="fab fa-twitter"></i></a>
+   <a href="#"><i class="fab fa-youtube"></i></a>
+   <a href="#"><i class="fab fa-pinterest-square"></i></a>
+   <a href="#"><i class="fab fa-snapchat-square"></i></a>
+ </div>
+ <span>&copy; MONSTERA Team 2020</span> `
+
