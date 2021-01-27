@@ -55,3 +55,15 @@ window.addEventListener("scroll", helloBuddy);
  </div>
  <span>&copy; MONSTERA Team 2020</span> `
 
+ let easter = document.querySelector('h2');
+ function easteregg(){
+    document.documentElement.style.setProperty('--green', '#393939');
+    document.documentElement.style.setProperty('--brown', 'white');
+    document.documentElement.style.setProperty('--whitish', '#EDE8E2');
+    document.documentElement.style.setProperty('--white', '#000000');
+    document.documentElement.style.setProperty('--black', '#ffffff');
+ }
+
+ easter.addEventListener("drag",easteregg);
+ 
+
