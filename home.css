@@ -218,8 +218,8 @@ html {
 
 h2{
   margin: 5% 0% 2% 0%;
-  font-weight: 400;
-  padding: 1% 0;
+  font-weight: 800;
+  padding: 0 0 15px 0;
   border-bottom: 2px solid var(--green);
   width: max-content;
 }
@@ -263,7 +263,6 @@ margin: 1%;
 
 .boderonly{
   border: 0.5px solid var(--whitish);
-  text-align: left;
 }
 
 
