@@ -75,3 +75,8 @@ figcaption{
     align-items: center;
     justify-content: space-between;
 }
+
+.productssection .button{
+    width: 20%;
+    color: white;
+}

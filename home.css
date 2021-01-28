@@ -219,6 +219,7 @@ html {
 h2{
   margin: 5% 0% 2% 0%;
   font-weight: 400;
+  padding: 1% 0;
   border-bottom: 2px solid var(--green);
   width: max-content;
 }
@@ -272,6 +273,10 @@ margin: 1% 0%;
 
 
 footer{
+  background-image:
+   url(imgs/fotttttttt.jpg);
+   background-image: 100%;
+   background-repeat: no-repeat;
   background-color: var(--whitish);
   color: #000000;
   padding: 2%;
@@ -279,7 +284,7 @@ footer{
 }
 
 footer nav{
-  background-color: var(--whitish);
+  background-color: rgba(255, 255, 255, 0);
 }
 .socials{
   margin: 2% auto;

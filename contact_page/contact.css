@@ -2,7 +2,7 @@
 
 
 .container {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -66,4 +66,15 @@
 .contact .button{
   font-family: 'Mulish', sans-serif;
   border: none;
+  box-shadow: none;
+}
+
+.contact .button:hover{
+    color: var(--green);
+    font-weight: 800;
+    background-color: rgba(0, 128, 0, 0);
+    border-top: 1px solid #226624;
+    border-bottom: 1px solid #226624;
+    box-shadow: none;
+    border-radius: 0;
 }
