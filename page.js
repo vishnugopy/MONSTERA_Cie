@@ -96,7 +96,7 @@ function getRandomQuote() {
   ];
 
   currentQuote = randomQuote.text;
-  quoteplace.innerHTML = `" ${currentQuote} "` ;
+  quoteplace.innerHTML = `&ldquo; ${currentQuote} &rdquo;` ;
 
 }
 
