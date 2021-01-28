@@ -65,5 +65,42 @@ window.addEventListener("scroll", helloBuddy);
  }
 
  easter.addEventListener("drag",easteregg);
+
+//random quotes
+ const quotesData = [
+  {
+    "text": "Tenez les plantes éloignées de toute source de chaleur."
+  },
+  {
+    "text": "Ne placez pas vos plantes dans l'obscurité, les plantes ont besoin de lumière pour se nourrir."
+  },
+  {
+    "text": "N'utilisez pas d'eau froide pour arroser vos plantes, mais de l'eau à température ambiante."
+  },
+  {
+    "text": "Ne laissez pas d'eau dans la soucoupe, cela peut provoquer la pourriture des racines."
+  },
+  {
+    "text": "Ne pas trop arroser, même les plantes tropicales."
+  }
+
+]
+
+
+let quoteplace = document.querySelector('#quotes');
+let currentQuote = '';
+
+function getRandomQuote() {
+  const randomQuote = quotesData[
+    Math.floor(Math.random() * quotesData.length)
+  ];
+
+  currentQuote = randomQuote.text;
+  quoteplace.innerHTML = `" ${currentQuote} "` ;
+
+}
+
+setInterval(getRandomQuote,3000);
+
  
 
