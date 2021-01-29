@@ -4,7 +4,7 @@ let foot = document.querySelector("footer");
  foot.innerHTML = `<div>
  <nav>
  <a href="../index.html">Accueil</a></li>
- <a href="../Product_page/product.html">Produits</a></li>
+ <a href="../Product_page/produits.html">Produits</a></li>
  <a href="../service_page/services.html">Services</a></li>
  <a href="../contact_page/contact.html">Contact</a></li>
  </nav>
@@ -26,12 +26,27 @@ sub.innerHTML = `
 <ul class="listofnavs">
   <li class="sublogo"><a href="../index.html"><img  src="../logos/Smalllogo.svg" alt="small_logo"></a></li>
   <li><a href="../index.html">Accueil</a></li>
-  <li><a href="../Product_page/product.html">Produits</a></li>
-  <li><a href="../service_page/services.html">Services</a></li>
-  <li><a href="../contact_page/contact.html">Contact</a></li>
-  <li><a class="button" href="#"><i class="fas fa-shopping-cart"></i>Panier</a></li>
+  <li><a href="../Product_page/produits.html">produits</a></li>
+  <li><a href="../service_page/services.html">services</a></li>
+  <li><a href="../contact_page/contact.html">contact</a></li>
+  <li><a class="button" href="######"><i class="fas fa-shopping-cart"></i>Panier</a></li>
 </ul>
 `
 
 
 
+//activer le nav bar
+let list = document.querySelectorAll('.listofnavs > li > a');
+// console.log(list);
+let hrefLocation = window.location.href;
+
+list.forEach(element => {
+    // console.log(element);
+    let href = element.firstChild.data;
+    // console.log(href);
+    if (hrefLocation.includes(href)) {
+        // console.log('ok');
+        // console.log(element);
+        element.classList.add('activeted')
+    }
+});

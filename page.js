@@ -40,7 +40,7 @@ window.addEventListener("scroll", helloBuddy);
  foot.innerHTML = `<div>
  <nav>
  <a href="index.html" >Accueil</a></li>
- <a href="Product_page/product.html">Produits</a></li>
+ <a href="Product_page/produits.html">Produits</a></li>
  <a href="service_page/services.html">Services</a></li>
  <a href="contact_page/contact.html">Contact</a></li>
  </nav>
