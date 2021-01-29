@@ -54,7 +54,7 @@ html {
   nav a {
     margin: 0 2%;
     text-decoration: none;
-    padding: 20px;
+    padding: 6%;
     display: inline-block;
     color: var(--black);
     transition: all 0.2s;
@@ -349,11 +349,11 @@ footer nav{
   position: absolute;
   text-align: center;
   transform: translateX(-20%);
-  
 }
 
 .socials a i span{
   display: none;
+  font-family: 'Mulish', sans-serif;
 }
 
 .animatedleaf{
