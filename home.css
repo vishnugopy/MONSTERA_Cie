@@ -26,11 +26,7 @@ html {
     box-sizing: inherit;
   }
 
-  .newnav{
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-  }
+
   
 #header {
     text-align: center;
@@ -41,14 +37,13 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+  
   }
 
-  .biglogo{
-    width: 20%;
-  }
+
   
   nav {
-    background: rgb(255, 255, 255);
+    background: var(--white);
     top: 0;
     width: 100%;
     transition: all 0.5s;
@@ -98,7 +93,34 @@ html {
   width: 30px;
  }
 
- .button{
+ .biglogo{
+  width: 10%;
+  overflow: hidden;
+}
+
+.newnav{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+main{
+  margin: 0 auto;
+  width: 70%;
+  padding: 5% 1%;
+}
+
+
+.sublogo{
+  width: 25%;
+  overflow: hidden;
+}
+
+.sublogo img{
+  width: 30px;
+ }
+
+ /* .button{
    display: flex;
    justify-content: center;
    align-items: center;
@@ -110,27 +132,78 @@ html {
    text-decoration: none;
    margin: 2% 0;
  }
+*/
 
  .button a{
-   color: var(--white);
+   color: var(--green);
  }
 
  .button:hover{
-   background-color: var(--brown);
-   color: var(--white);
+   color: var(--green);
    font-weight: 800;
+   background-color: rgba(0, 128, 0, 0);
+ } 
+
+ .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:50%;
+  height: 50px;
+  color: var(--whitish);
+  border-radius: 2px;
+  text-decoration: none;
+  margin: 2% 0;
+ transition: all 0.3s;
+ position: relative;
+ background-color: var(--green);
  }
+ 
+ .button::before {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   opacity: 0;
+   transition: all 0.3s;
+   border-top-width: 1px;
+   border-bottom-width: 1px;
+   border-top-style: solid;
+   border-bottom-style: solid;
+   border-top-color: var(--green);
+   border-bottom-color: var(--green);
+   transform: scale(0.1, 1);
+ }
+ 
+ .button:hover::before {
+   opacity: 1;	
+   transform: scale(1, 1);	
+ }
+ .button::after {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   transition: all 0.3s;
+ }
+ .button:hover::after {
+   opacity: 0;	
+   transform: scale(0.1, 1);
+ }
+ 
 
  
  .button i{
   margin: 0 5%;
  }
 
- main{
-   margin: 0 auto;
-   width: 70%;
-   padding: 5% 1%;
- }
+
 
  .firstsectionofpage{
    padding: 0.8% 0.5% 0.2% 0.5%;
@@ -138,7 +211,7 @@ html {
    justify-content: center;
    border: 0.5px solid var(--whitish);
    border-radius: 15px;
-   text-align: justify;
+
 
  }
 
@@ -163,7 +236,8 @@ html {
 
 h2{
   margin: 5% 0% 2% 0%;
-  font-weight: 400;
+  font-weight: 800;
+  padding: 0 0 15px 0;
   border-bottom: 2px solid var(--green);
   width: max-content;
 }
@@ -185,8 +259,7 @@ h3{
   width: 100%;
   display: flex;
   justify-content: center;
-  text-align: justify;
-
+  align-items: center;
 }
 
 .profileslider div {
@@ -194,12 +267,31 @@ width: 30%;
 display: flex;
 align-items: center;
 flex-direction: column;
-border-radius: 15px;
 padding: 2%;
 margin: 1%;
+
 }
 
-.profileslider img{
+.quote{
+  font-size: 1.5em;
+  color: var(--green);
+  
+}
+
+#quotes{
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.5em;
+  color: var(--green);
+  font-weight: 700;
+  font-style: italic;
+  
+}
+
+.diffrent{
+  flex-direction: row;
+}
+
+.boderonly img{
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -207,6 +299,7 @@ margin: 1%;
 
 .boderonly{
   border: 0.5px solid var(--whitish);
+  border-radius: 15px;
 }
 
 
@@ -216,14 +309,18 @@ margin: 1% 0%;
 
 
 footer{
-  background-color: whitesmoke;
+  background-image:
+   url(imgs/fotttttttt.jpg);
+   background-image: 100%;
+   background-repeat: no-repeat;
+  background-color: var(--whitish);
   color: #000000;
   padding: 2%;
   text-align: center;
 }
 
 footer nav{
-  background-color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0);
 }
 .socials{
   margin: 2% auto;
@@ -244,5 +341,50 @@ footer nav{
   color: var(--green);
   opacity: 0.8;
   
+}
+
+.socials a:hover  span{
+  display: block;
+  font-size: 14px;
+  margin:0.5% 0;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-20%);
+  
+}
+
+.socials a i span{
+  display: none;
+}
+
+.animatedleaf{
+  width: 100%;
+  height: 100%;
+  transform-origin: top right;
+  animation: anime 10s ease-in-out infinite;
+  
+}
+
+
+
+.activeted{
+  color: var(--green);
+  font-weight: 700;
+  border-bottom: 5px solid var(--green);
+}
+
+
+@keyframes anime{
+
+  0%{
+    transform: rotate(15deg);
+  }
+  50%{
+    transform: rotate(-50deg);
+  }
+  100%{
+    transform: rotate(15deg);
+  }
+
 }
 

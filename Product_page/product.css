@@ -6,6 +6,19 @@
 
 }
 
+.priceButton p{
+    font-size: 1.3em;
+    font-weight: 700;  
+}
+
+
+.priceButton p span{
+    color: red;
+    margin: 0 0 0 10%;
+    font-size: 0.8em;
+    font-weight: 500;  
+}
+
 .first{
     display: flex;
     flex-direction: row;
@@ -67,6 +80,7 @@ figcaption{
     margin: 2% 0%;
     font-size: 1.15em;
     color: #393939;
+    font-weight: 700;
 }
 
 .priceButton{
@@ -76,3 +90,8 @@ figcaption{
     justify-content: space-between;
 }
 
+.productssection .button{
+    padding: 0 1%;
+    color: white;
+    width: 55%;
+}

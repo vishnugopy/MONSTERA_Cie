@@ -1,36 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-    font-family: 'Mulish', Arial, sans-serif;
-}
+
 .container {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
 }
-.container > h2 {
-  border-bottom: 2px solid #226624;
-  width: max-content;
-  padding-bottom: 15px;
-}
+
 .contact {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     font-size: 1.2em;
-    min-height: 100vh;
+    font-family: 'Mulish', sans-serif;
+  
 }
 .form , address {
     width: 45%;
 }
 .form label {
     /* font-size: 1em; */
-    margin-bottom: 5px;
+    margin-bottom: 2%;
 }
 .form label > span {
     color: #f00;
@@ -66,11 +56,25 @@ body {
 .container address > img {
     width: 80%;
     align-self: center;
-    margin-bottom: 2em;
+    margin-bottom: 5%;
 }
 .contact address > div > a {
     color: #226624;
-}
-.separateur {
     
+}
+
+.contact .button{
+  font-family: 'Mulish', sans-serif;
+  border: none;
+  box-shadow: none;
+}
+
+.contact .button:hover{
+    color: var(--green);
+    font-weight: 800;
+    background-color: rgba(0, 128, 0, 0);
+    border-top: 1px solid #226624;
+    border-bottom: 1px solid #226624;
+    box-shadow: none;
+    border-radius: 0;
 }

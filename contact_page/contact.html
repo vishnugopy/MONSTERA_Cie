@@ -7,13 +7,12 @@
     <title>Contact</title>
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="../home.css">
-    <link rel="stylesheet" href="home.css">
-    <link rel="shortcut icon" href="logos/Smalllogo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../logos/Smalllogo.svg" type="image/x-icon">
     <link href="../fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="newnav" id="subnav"></header>
+    <nav class="newnav" id="subnav"></nav>
     <main>
         <div class="container">
             <h2>Contactez-Nous</h2>
@@ -21,29 +20,29 @@
                 <div class="form">
                     <form>
                         <p>
-                            <label for="">Nom Complet <span>*</span></label>
+                            <label for="name">Nom Complet <span>*</span></label>
                             <input type="text" placeholder="Jean-Michel Dupon" required>
                         </p>
                         <p>
-                            <label for="">Email <span>*</span></label>
+                            <label for="email">Email <span>*</span></label>
                             <input type="email" placeholder="exemple@monsite.com" required>
                         </p>
                         <p>
-                            <label for="">Portable <span>*</span></label>
-                            <input type="text" placeholder="0612345678" required>
+                            <label for="tel">Portable <span>*</span></label>
+                            <input type="tel"  name="phone" type="number" placeholder="0612345678" required>
                         </p>
                         <p>
-                            <label for="">Message <span>*</span></label>
+                            <label for="message">Message <span>*</span></label>
                             <textarea name="" id="" cols="30" rows="10" placeholder="Message..." required></textarea>
                         </p>
-                        <input type="submit" value="Envoyer">
+                        <input class="button" type="submit" value="Envoyer">
                     </form>
                 </div>
                 <span class="separateur"></span>
                 <address>
-                    <img src="../imgs/livraison.jpg" alt="">
+
+                    <img src="../imgs/location.png" alt="">
                     <div>
-                        <!-- <img src="../img/contact4.jpg" alt=""> <br /> -->
                         14 Rue de la Beaune <br />
                         Montreuil 93100 <br />
                         île de france <br />
