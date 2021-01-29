@@ -9,7 +9,7 @@ let space = bar.offsetTop;
 function helloBuddy() {
   if (window.scrollY >= space) {
     bar.classList.add("newnav");
-    logo.style.maxWidth = "10%";
+    logo.style.maxWidth = "25%";
     main.style.paddingTop = "10%";
   }
   else {
