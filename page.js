@@ -39,19 +39,19 @@ window.addEventListener("scroll", helloBuddy);
  let foot = document.querySelector("footer");
  foot.innerHTML = `<div>
  <nav>
- <a href="index.html">Accueil</a></li>
+ <a href="index.html" >Accueil</a></li>
  <a href="Product_page/product.html">Produits</a></li>
  <a href="service_page/services.html">Services</a></li>
  <a href="contact_page/contact.html">Contact</a></li>
  </nav>
  </div>
  <div class="socials">
-   <a href="#"><i class="fab fa-facebook-square"></i></a>
-   <a href="#"><i class="fab fa-instagram"></i></a>
-   <a href="#"><i class="fab fa-twitter"></i></a>
-   <a href="#"><i class="fab fa-youtube"></i></a>
-   <a href="#"><i class="fab fa-pinterest-square"></i></a>
-   <a href="#"><i class="fab fa-snapchat-square"></i></a>
+   <a href="#" target="_blank" ><i class="fab fa-facebook-square"><span>Facebook<span></i></a>
+   <a href="#" target="_blank" ><i class="fab fa-instagram"><span>Instagram<span></i></a>
+   <a href="#" target="_blank" ><i class="fab fa-twitter"><span>Twitter<span></i></a>
+   <a href="#" target="_blank" ><i class="fab fa-youtube"><span>YouTube<span></i></a>
+   <a href="#" target="_blank" ><i class="fab fa-pinterest-square"><span>Pinterest<span></i></a>
+   <a href="#" target="_blank" ><i class="fab fa-snapchat-square"><span>Snapchat<span></i></a>
  </div>
  <span>&copy; MONSTERA Team 2020</span> `
 
