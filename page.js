@@ -6,7 +6,7 @@ let main = document.querySelector("main");
 let space = bar.offsetTop;
 
 
-function helloBuddy() {
+function fixMyNav() {
   if (window.scrollY >= space) {
     bar.classList.add("newnav");
     logo.style.maxWidth = "25%";
@@ -18,7 +18,7 @@ function helloBuddy() {
     main.style.paddingTop = "5%";
   }
 }
-window.addEventListener("scroll", helloBuddy);
+window.addEventListener("scroll", fixMyNav);
 
  //changer le image qui est dans le home page
  let myImage = document.getElementById("mainImage");
